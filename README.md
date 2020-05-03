@@ -2,8 +2,7 @@
 A deep learning model based on CNN fro detecting and mapping covid affected chest x-rays images
 So, this model is primarily focussed upon detecting Covid-19 using chest x-ray images. The dataset comprised of around 280 images containing equal no. of normal x-rays and covid affected chest x-rays. The no. of images are low because of the reason that x-ray images of covid affected patients are very low in number on the internet. So to overcome this, data augmentation has been done to increase and generalise what the model sees on the available no. of images.
 
-
-###Model Architecture:
+# Model Architecture:
 
 ![model (1)](https://user-images.githubusercontent.com/17724496/80915132-bc666400-8d6d-11ea-9aa5-b7f4c4f7714f.png)
 
@@ -28,7 +27,7 @@ The confusion map for the same was:
 Our model was able to classify almost all x-ray images correctly. Only two images were wrongly classified.
 
 
-###Grad-CAM :
+# Grad-CAM :
 In order to further visualise what our model is actually trying to capture in such x-ray images, we used class activation maps. In our project we have used gradient based Grad-CAM for depicting what the model actually sees.
 uses the gradient information flowing into the last convolutional layer of the CNN to understand each neuron for a decision of interest. This results in a coarse heatmap of the same size as that of the convolutional feature maps.
 
